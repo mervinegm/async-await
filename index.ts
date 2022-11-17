@@ -11,8 +11,9 @@ function parseaParams(argv): ContactsControllerOptions {
   };
 }
 
-function main() {
+async function main() {
   const controller = new ContactsController();
+  await controller.promesa;
   const params = parseaParams(process.argv.slice(2));
   const result = controller.processOptions(params);
   console.log(result);

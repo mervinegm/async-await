@@ -39,6 +39,14 @@ class ContactsCollection {
 }
 export { ContactsCollection, Contact };
 
-const coll = new ContactsCollection();
-coll.load();
-console.log(coll.data);
+/* const mock = new ContactsCollection();
+mock.load().then(() => {
+  console.log(mock.data);
+});
+
+async function loadDataa() {
+  await mock.load();
+  console.log(mock.data);
+}
+
+loadDataa(); */
